@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { IdGenerator } from '../services/idGenerator';
 import { Carteira } from '../entities/classCarteira';
-import { CarteiraDatabase } from '../data/carteiraDatabase';
+import { CarteiraDatabase } from '../data/CarteiraDatabase';
 
 export async function setCarteira(req: Request, res: Response): Promise<void>{
   try{

@@ -4,7 +4,8 @@ export class Carteira{
     private pontos_usuario: number,
     private id_usuario: string
   ){}
-    public getIdCarteira = (): string => { 
+  
+  public getIdCarteira = (): string => { 
     return this.id;
   }
   public getPontosUsuario = (): number => { 
