@@ -6,7 +6,7 @@ import { Perfil } from "./componentes/Perfil/Perfil";
 function App() {
   return (
     <div>
-      <Perfil />
+      <Loja />
     </div>
   );
 }

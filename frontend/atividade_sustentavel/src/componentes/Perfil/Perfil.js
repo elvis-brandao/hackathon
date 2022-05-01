@@ -1,18 +1,26 @@
 import { Header } from "../Header/Header";
 import { Menu } from "../Menu/Menu";
 import { CardPerfil } from "./CardPerfil";
-import { BodyPerfil, CaixaP, Desafiosdiv, Desafiotext } from "./PerfilStyled";
+import {
+  BodyPerfil,
+  Desafiosdiv,
+  Desafiotext,
+  DisplayBody,
+} from "./PerfilStyled";
 
 export const Perfil = () => {
   return (
+    // <DisplayBody>
+    //   <Menu />
+
     <BodyPerfil>
-      <CaixaP>
-        <Header />
-        <CardPerfil />
-      </CaixaP>
+      <Header />
+
+      <CardPerfil />
       <Desafiosdiv>
         <Desafiotext>Desafios completos:</Desafiotext>
       </Desafiosdiv>
     </BodyPerfil>
+    // </DisplayBody>
   );
 };

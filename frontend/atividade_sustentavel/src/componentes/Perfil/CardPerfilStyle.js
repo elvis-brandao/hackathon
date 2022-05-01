@@ -23,10 +23,7 @@ export const Ellipse = styled.img`
 export const UserName = styled.span`
   width: 562px;
   height: 56px;
-
-  top: 253px;
   font-style: normal;
-  font-weight: 600;
   font-size: 35px;
   line-height: 56px;
   color: #ffffff;
@@ -36,7 +33,6 @@ export const Nivel = styled.p`
   width: 120px;
   height: 28px;
   margin-left: 35px;
-  top: 311px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -45,23 +41,19 @@ export const Nivel = styled.p`
 `;
 
 export const ButtonCard = styled.button`
-  width: 145px;
-  height: 40px;
+  width: 143px;
+  height: 36px;
   background: #405337;
   border: 2px solid #ffffff;
-  box-sizing: border-box;
   border-radius: 13px;
   color: #ffffff;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 23px;
   margin-left: 35px;
 `;
 
 export const ButtonEPontos = styled.div`
-  width: 40vw;
-  height: 50px ;
+  width: 45vw;
+  height: 50px;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -76,7 +68,6 @@ export const PerfilC = styled.div`
 export const ContadorDePontos = styled.div`
   width: 300px;
   height: 60px;
-  top: 399px;
   background: #45a754;
   border: 2px solid #ffffff;
   box-sizing: border-box;
@@ -94,4 +85,3 @@ export const Quantitativo = styled.img`
   width: 30px;
   padding: 10px;
 `;
-

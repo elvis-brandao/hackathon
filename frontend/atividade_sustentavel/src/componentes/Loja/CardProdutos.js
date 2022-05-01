@@ -1,10 +1,14 @@
+import { ButtonCard, Card, NomePrice } from "./CardProdutosStyle";
+
 export const CardProdutos = () => {
   return (
-    <div>
+    <Card>
       <img src="" alt="Sabonete Líquido" />
-      <h2>Sabonete Líquido</h2>
-      <p>500 pontos</p>
-      <button>Trocar pontos</button>
-    </div>
+      <NomePrice>
+        <h2>Sabonete Líquido</h2>
+        <p>500 pontos</p>
+      </NomePrice>
+      <ButtonCard>Trocar pontos</ButtonCard>
+    </Card>
   );
 };
