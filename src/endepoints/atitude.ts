@@ -29,7 +29,7 @@ export async function setAtitude(req: Request, res: Response): Promise<void>{
     const newAtitude = new Atitude(id, name_atitude, photo_atitude, legenda_atitude, pontos_atitude, id_usuario)
     await atitudeDatabase.createAtitude(newAtitude)
 
-    res.status(200).send({message:'Atitude Adicionada'})
+    res.status(201).send({message:'Atitude Adicionada'})
   }catch(err: any){ 
     res.status(400).send({message: err.message  || err.sqlMessage });
   }

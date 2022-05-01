@@ -25,4 +25,13 @@ export class Atitude{
   public getIdUsuario = (): string => { 
     return this.id_usuario;
   }
+  static toAtitudeModel(data: Atitude) {
+    return new Atitude(
+      data.id, 
+      data.name_atitude,
+      data.photo_atitude,
+      data.legenda_atitude,
+      data.pontos_atitude,
+      data.id_usuario)
+  }
 }
