@@ -29,9 +29,7 @@ export async function setCarteira(req: Request, res: Response): Promise<void>{
     const newCarteira = new Carteira(id, pontos_usuario, id_usuario)
     await carteiraDatabase.createCarteira(newCarteira)
 
-    
-
-  res.status(200).send({message:'Carteira Adicionada'})
+  res.status(201).send({message:'Carteira Adicionada'})
   }catch(err: any){ 
     res.status(400).send({message: err.message  || err.sqlMessage });
   }

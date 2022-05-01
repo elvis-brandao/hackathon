@@ -52,6 +52,15 @@ const createTables = () => BaseDatabase.connection.raw(`
       FOREIGN KEY (id_carteira) REFERENCES UserCarteira(id),
       FOREIGN KEY (id_produto) REFERENCES Produtos(id)
     );
+
+    CREATE TABLE IF NOT EXISTS NivelUsuario (
+      id VARCHAR(255) PRIMARY KEY,
+      bronze VARCHAR(255) NOT NULL,
+      prata VARCHAR(255) NOT NULL,
+      ouro VARCHAR(255) NOT NULL,
+      id_usuario VARCHAR(255) NOT NULL,
+      FOREIGN KEY (id_usuario) REFERENCES User(id)
+    );
 `)
 .then(() => { console.log("Tabelas criadas") })
 .catch(printError)

@@ -44,7 +44,7 @@ export async function signup(req: Request, res: Response): Promise<void>{
 
     console.log(token);
 
-  res.status(200).send({message:'User create',token})
+  res.status(201).send({message:'User create',token})
   }catch(err: any){ 
     res.status(400).send({message: err.message  || err.sqlMessage });
   }

@@ -14,4 +14,11 @@ export class Carteira{
   public getIdUsuario = (): string => { 
     return this.id_usuario;
   }
+
+  static toCarteiraModel(data: Carteira) {
+    return new Carteira(
+      data.id, 
+      data.pontos_usuario, 
+      data.id_usuario)
+  }
 }
