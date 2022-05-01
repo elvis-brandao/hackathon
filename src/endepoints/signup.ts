@@ -4,7 +4,7 @@ import {HashManager} from '../services/HashManager';
 import { IdGenerator } from '../services/idGenerator';
 import { User } from '../entities/classUser';
 import { UserDatabase } from '../data/UserDatabase';
-import { Authenticator} from '../services/Authenticator';
+// import { Authenticator} from '../services/Authenticator';
 
 export async function signup(req: Request, res: Response): Promise<void>{
   try{
@@ -39,12 +39,13 @@ export async function signup(req: Request, res: Response): Promise<void>{
     const newUser = new User(id, name_usuario, email, hashPassword, photo_usuario, role)
     await userDatabase.createUser(newUser)
 
-    const authenticator =new Authenticator() 
-    const token = authenticator.generate({id, role})
+    // const authenticator =new Authenticator() 
+    // const token = authenticator.generate({id, role})
 
-    console.log(token);
+    // console.log(token);
 
-  res.status(201).send({message:'User create',token})
+  // res.status(201).send({message:'User create',token})
+  res.status(201).send({message:'User create'})
   }catch(err: any){ 
     res.status(400).send({message: err.message  || err.sqlMessage });
   }

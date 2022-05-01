@@ -6,13 +6,13 @@ import { TrocaLojaDatabase } from '../data/TrocaLojaDatabase';
 export async function setTrocaLoja(req: Request, res: Response): Promise<void>{
   try{
 
-    const token = req.headers.authorization
+    // const token = req.headers.authorization
 
-    if(!token) {
-      res
-        .status(422)
-        .send("Esse endpoint exige um token.")
-    } 
+    // if(!token) {
+    //   res
+    //     .status(422)
+    //     .send("Esse endpoint exige um token.")
+    // } 
 
     const {id_usuario, id_carteira, id_produto,  quantidade_produtos, total_de_pontos} = req.body;
 

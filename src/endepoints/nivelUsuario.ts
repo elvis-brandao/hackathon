@@ -6,13 +6,13 @@ import { NivelUsuarioDatabase } from '../data/NivelUsuarioDatabase';
 export async function setNivelUsuario(req: Request, res: Response): Promise<void>{
   try{
 
-    const token = req.headers.authorization
+    // const token = req.headers.authorization
 
-    if(!token) {
-      res
-        .status(422)
-        .send("Esse endpoint exige um token.")
-    } 
+    // if(!token) {
+    //   res
+    //     .status(422)
+    //     .send("Esse endpoint exige um token.")
+    // } 
 
     const {bronze, prata, ouro, id_usuario} = req.body;
 
