@@ -27,7 +27,7 @@ export const CardPerfil = () => {
 
           <ButtonEPontos>
             <ButtonCard>
-              lojinha <ShoppingCartIcon fontSize="medium" />
+              lojinha <ShoppingCartIcon fontSize="small" />
             </ButtonCard>
             <ContadorDePontos>
               <h4>5,000 points</h4>
@@ -36,9 +36,7 @@ export const CardPerfil = () => {
           </ButtonEPontos>
         </div>
       </BodyCard>
-      <Desafiosdiv>
-        <h3>Desafios completos:</h3>
-      </Desafiosdiv>
+
     </div>
   );
 };
