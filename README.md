@@ -1,7 +1,7 @@
 # Atitude Sustentável
 
 Logo
-![image](https://user-images.githubusercontent.com/92445126/166298076-2c7f7a75-4f83-4b46-aee1-a963e0913825.png)
+![image](https://user-images.githubusercontent.com/92445126/166298486-1b421ad3-bceb-4e3a-bee9-e39c6e7223b5.png)
 
 O projeto é para motivar e educar as pessoas a preservarem o planeta, 
 por meio de uma atitude sustentável, 
