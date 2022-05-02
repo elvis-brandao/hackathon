@@ -2,9 +2,6 @@ import knex from "knex";
 import {Knex} from "knex";
 import dotenv from "dotenv";
 
-//require('dotenv').config({path:'../env'})
-
-
 dotenv.config();
 
 export class BaseDatabase {
