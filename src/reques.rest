@@ -3,8 +3,8 @@ POST http://localhost:3003/user/signup
 Content-Type: application/json
 
 {
-  "name_usuario" : "Maria Silva",
-  "email" : "maria@gmail.com",
+  "name_usuario" : "Caca Silva",
+  "email" : "caca@gmail.com",
   "password" : "123456",
   "photo_usuario" : "https://images.pexels.com/photos/445109/pexels-photo-445109.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
   "role" : "ADMIN"
@@ -14,25 +14,35 @@ Content-Type: application/json
 // Create Atitude
 POST http://localhost:3003/user/atitude
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmOTdiNjM5LTg4MWMtNGFkYy1hY2ZiLWVkNTNhYzM4YTVlMSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1MTM3MjQzNCwiZXhwIjoxNjUxNDM4NDM0fQ.9KtMT8B-OEf5e4XjD8gerqcFeVbOHbiig0dz6yDvx3U
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkzZDUzZTk4LWRiMzctNGNiNS04ZTkyLWUxMWJkMmYxZmIyNyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1MTQzOTQyNywiZXhwIjoxNjUxNTA1NDI3fQ.MEubSiIoGzHaDdgY9nc5wh9SPWXD0gnssBR08RMwZHQ
 
 {
   "name_atitude" : "Plantar uma árvore",
   "photo_atitude" : "https://images.pexels.com/photos/445109/pexels-photo-445109.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
   "legenda_atitude" : "plantou um pé de sidreira",
   "pontos_atitude" : 1000,
-  "id_usuario" : "0f97b639-881c-4adc-acfb-ed53ac38a5e1"
+  "id_usuario" : "93d53e98-db37-4cb5-8e92-e11bd2f1fb27"
 }
 ### 
 
 // Create Carteira
 POST http://localhost:3003/user/carteira
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmOTdiNjM5LTg4MWMtNGFkYy1hY2ZiLWVkNTNhYzM4YTVlMSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1MTM3MjQzNCwiZXhwIjoxNjUxNDM4NDM0fQ.9KtMT8B-OEf5e4XjD8gerqcFeVbOHbiig0dz6yDvx3U
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkzZDUzZTk4LWRiMzctNGNiNS04ZTkyLWUxMWJkMmYxZmIyNyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1MTQzOTQyNywiZXhwIjoxNjUxNTA1NDI3fQ.MEubSiIoGzHaDdgY9nc5wh9SPWXD0gnssBR08RMwZHQ
 
 {
   "pontos_usuario" : 1000,
-  "id_usuario" : "0f97b639-881c-4adc-acfb-ed53ac38a5e1"
+  "id_usuario" : "93d53e98-db37-4cb5-8e92-e11bd2f1fb27"
+}
+### 
+
+// fazer login
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+  "email" : "caca@gmail.com",
+  "password" : "123456"
 }
 ### 
 
@@ -42,9 +52,9 @@ Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmOTdiNjM5LTg4MWMtNGFkYy1hY2ZiLWVkNTNhYzM4YTVlMSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1MTM3MjQzNCwiZXhwIjoxNjUxNDM4NDM0fQ.9KtMT8B-OEf5e4XjD8gerqcFeVbOHbiig0dz6yDvx3U
 
 {
-  "id_usuario" : "0f97b639-881c-4adc-acfb-ed53ac38a5e1",
-  "id_carteira" : "8a796c36-bc02-4cbc-b0e3-bae42f93f4b9",
-  "id_produto" : "80a52846-2fa8-4c74-972c-7f1a3be6dbd7",
+  "id_usuario" : "93d53e98-db37-4cb5-8e92-e11bd2f1fb27",
+  "id_carteira" : "aef52968-b2db-49ca-8482-d772a97ffb1b",
+  "id_produto" : "dbe750ff-6c5b-4916-ad03-bf217e5dce0e",
   "quantidade_produtos" : 5,
   "total_de_pontos" : 1000
 }
@@ -53,31 +63,31 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmOTdiNjM5LTg4MWMt
 // Produtos
 POST http://localhost:3003/loja
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmOTdiNjM5LTg4MWMtNGFkYy1hY2ZiLWVkNTNhYzM4YTVlMSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1MTM3MjQzNCwiZXhwIjoxNjUxNDM4NDM0fQ.9KtMT8B-OEf5e4XjD8gerqcFeVbOHbiig0dz6yDvx3U
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkzZDUzZTk4LWRiMzctNGNiNS04ZTkyLWUxMWJkMmYxZmIyNyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1MTQzOTQyNywiZXhwIjoxNjUxNTA1NDI3fQ.MEubSiIoGzHaDdgY9nc5wh9SPWXD0gnssBR08RMwZHQ
 
 {
-  "pontos_produto" : 50,
-  "name_produto" : "sabão"
+  "pontos_produto" : 200,
+  "name_produto" : "sacola"
 }
 ### 
 
 // Produtos
 POST http://localhost:3003/user/nivel
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmOTdiNjM5LTg4MWMtNGFkYy1hY2ZiLWVkNTNhYzM4YTVlMSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1MTM3MjQzNCwiZXhwIjoxNjUxNDM4NDM0fQ.9KtMT8B-OEf5e4XjD8gerqcFeVbOHbiig0dz6yDvx3U
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkzZDUzZTk4LWRiMzctNGNiNS04ZTkyLWUxMWJkMmYxZmIyNyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1MTQzOTQyNywiZXhwIjoxNjUxNTA1NDI3fQ.MEubSiIoGzHaDdgY9nc5wh9SPWXD0gnssBR08RMwZHQ
 
 {
   "bronze" : "-",
   "prata" : "prata",
   "ouro": "-",
-  "id_usuario" : "0f97b639-881c-4adc-acfb-ed53ac38a5e1"
+  "id_usuario" : "93d53e98-db37-4cb5-8e92-e11bd2f1fb27"
 }
 ### 
 
 // Buscar Usuário
-GET http://localhost:3003/user
+GET https://atitudes.herokuapp.com/user
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmOTdiNjM5LTg4MWMtNGFkYy1hY2ZiLWVkNTNhYzM4YTVlMSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1MTM3MjQzNCwiZXhwIjoxNjUxNDM4NDM0fQ.9KtMT8B-OEf5e4XjD8gerqcFeVbOHbiig0dz6yDvx3U
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkzZDUzZTk4LWRiMzctNGNiNS04ZTkyLWUxMWJkMmYxZmIyNyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1MTQzOTQyNywiZXhwIjoxNjUxNTA1NDI3fQ.MEubSiIoGzHaDdgY9nc5wh9SPWXD0gnssBR08RMwZHQ
 
 ### 
 
@@ -134,5 +144,10 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmOTdiNjM5LTg4MWMt
 GET http://localhost:3003/user/nivel/0f97b639-881c-4adc-acfb-ed53ac38a5e1
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmOTdiNjM5LTg4MWMtNGFkYy1hY2ZiLWVkNTNhYzM4YTVlMSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1MTM3MjQzNCwiZXhwIjoxNjUxNDM4NDM0fQ.9KtMT8B-OEf5e4XjD8gerqcFeVbOHbiig0dz6yDvx3U
+
+### 
+
+// Buscar nível usuário
+GET http://localhost:3003/
 
 ### 
