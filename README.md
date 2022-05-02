@@ -26,6 +26,10 @@ Link do Figma:
 
 https://www.figma.com/file/yF41BbH5gRagEDG8x7M0w0/ProviHack?node-id=0%3A1
 
+Link Pitch Youtube:
+
+https://www.youtube.com/watch?v=hasARqrtNJk
+
 Fotos do site em produção:
 
 ![image](https://user-images.githubusercontent.com/92445126/166298256-a2cc159c-c3e8-48ee-a287-0724c311fd6a.png)
