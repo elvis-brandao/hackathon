@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const BodyPerfil = styled.body`
+export const BodyLoja = styled.body`
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -18,29 +18,22 @@ export const BodyPerfil = styled.body`
   background-attachment: fixed;
 `;
 
-export const Desafiosdiv = styled.div`
-  width: 60vw;
-  min-height: 40vh;
-  background: rgba(69, 167, 84, 0.8);
-  border: 1px solid #ffffff;
-  box-sizing: border-box;
+export const TitlePontos = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45vw;
+  height: 45px;
+  background-color: #405337;
   border-radius: 21px;
-  color: #ffff;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 47px;
-  padding-left: 10px;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-top: 20px;
 `;
 
-export const Desafiotext = styled.h3`
-  margin: 0;
-`;
-
-export const DisplayBody = styled.div`
+export const Cards = styled.div`
   display: flex;
+  gap: 15px;
   align-items: center;
-  justify-content: center;
-  flex-direction: row;
 `;
