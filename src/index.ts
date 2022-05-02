@@ -14,6 +14,15 @@ import { getTrocaLojaByUser } from "./endepoints/getTrocaLojaByUser";
 import { getAtitudesUser } from "./endepoints/getAtitudes";
 import { getAllAtitude } from "./endepoints/getAllAtitudes";
 import { getNivelUser } from "./endepoints/getNivelUser";
+import { getHome } from "./endepoints/getHome"
+import {login } from "./endepoints/login";
+
+// get teste
+app.get("/", getHome);
+
+// login
+app.post("/user/login", login);
+
 // Create user
 app.post("/user/signup", signup);
 
