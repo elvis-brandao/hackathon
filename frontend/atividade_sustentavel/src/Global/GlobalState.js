@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BaseUrl } from "../Constants/Url";
+import axios from "axios"
 
 export const GlobalState = (props) => {
   const headers = {
