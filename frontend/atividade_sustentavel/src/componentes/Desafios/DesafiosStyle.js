@@ -76,11 +76,39 @@ export const PontosDivMeta = styled.div`
   align-items: center;
   justify-content: center;
   width: 4vw;
-  background-color: #45a754;
+  background-color: #3f6039;
+  border: 2px solid #ffffff;
   box-sizing: border-box;
   border-radius: 12px;
   border-radius: 12px;
   height: 30%;
   margin-top: 10px;
+  margin-bottom: 20px;
+`;
+
+export const TituloEDescriçao = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const PontosEBotao = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   margin-right: 10px;
+`;
+
+export const ButtonIniciaMeta = styled.div`
+  width: 8vw;
+  height: 40px;
+  background: #45a754;
+  border-radius: 0px 0px 50px 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
 `;
