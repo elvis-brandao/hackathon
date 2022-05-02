@@ -29,8 +29,7 @@ export const Body = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
- 
-`
+`;
 
 export const Text = styled.div`
   display: flex;
@@ -43,12 +42,32 @@ export const Text = styled.div`
   margin-top: 20px;
   color: #fff;
   font-size: 18px;
-`
+`;
 
 export const Title = styled.h4`
-color: #BFBABA;
-display: flex ;
-align-self: center;
-font-size: 18px;
-margin-bottom: 10px;
-`
+  color: #bfbaba;
+  display: flex;
+  align-self: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+`;
+
+export const MenuD = styled.div`
+  width: 10vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+`;
+
+export const BotãoMenu = styled.img`
+  width: 25px;
+  margin-left: 15%;
+  text-align: end;
+`;
+
+export const MenuHeaders = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 135px;
+`;

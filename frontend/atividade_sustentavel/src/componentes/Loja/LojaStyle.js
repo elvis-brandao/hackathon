@@ -35,4 +35,5 @@ export const TitlePontos = styled.div`
 export const Cards = styled.div`
   display: flex;
   gap: 15px;
+  align-items: center;
 `;

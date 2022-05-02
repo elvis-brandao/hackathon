@@ -1,6 +1,9 @@
+import React, { useContext } from "react";
 import { Header } from "../Header/Header";
 import { CardProdutos } from "./CardProdutos";
+import NavigateNext from "../../assets/NavigateNext.png";
 import { BodyLoja, TitlePontos, Cards } from "./LojaStyle";
+import GlobalStateContext from "../../Global/GlobalStateContext";
 
 export const Loja = () => {
   return (
@@ -12,6 +15,7 @@ export const Loja = () => {
       </TitlePontos>
       <Cards>
         <CardProdutos />
+        <img src={NavigateNext} alt="Next" />
       </Cards>
     </BodyLoja>
   );
