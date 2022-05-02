@@ -6,13 +6,13 @@ import { CarteiraDatabase } from '../data/CarteiraDatabase';
 export async function setCarteira(req: Request, res: Response): Promise<void>{
   try{
 
-    // const token = req.headers.authorization
+    const token = req.headers.authorization
 
-    // if(!token) {
-    //   res
-    //     .status(422)
-    //     .send("Esse endpoint exige um token.")
-    // } 
+    if(!token) {
+      res
+        .status(422)
+        .send("Esse endpoint exige um token.")
+    } 
 
     const {pontos_usuario, id_usuario} = req.body;
 

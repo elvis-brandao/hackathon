@@ -1,6 +1,8 @@
-# Atitude Sustentável
+# Hackathon-Provi - Desafio Hackathon da Provi 2022
 
-Logo
+Fiquei responsável pela parte do banck-end e criação da API.
+
+Logo do projeto
 
 ![image](https://user-images.githubusercontent.com/92445126/166298486-1b421ad3-bceb-4e3a-bee9-e39c6e7223b5.png)
 
@@ -35,3 +37,7 @@ Fotos do site em produção:
 ![image](https://user-images.githubusercontent.com/92445126/166298256-a2cc159c-c3e8-48ee-a287-0724c311fd6a.png)
 
 ![image](https://user-images.githubusercontent.com/92445126/166298192-07929e42-3d33-4ff3-b342-834bfc41ade9.png)
+
+
+
+

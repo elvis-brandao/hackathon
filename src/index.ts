@@ -20,6 +20,7 @@ import {login } from "./endepoints/login";
 // get teste
 app.get("/", getHome);
 
+
 // login
 app.post("/user/login", login);
 

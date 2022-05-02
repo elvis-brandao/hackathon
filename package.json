@@ -1,7 +1,8 @@
 {
-  "name": "hackathon",
-  "version": "0.0.0",
-  "private": true,
+  "name": "hackathon-provi",
+  "version": "1.0.0",
+  "description": "Desafio Hackathon da Provi 2022",
+  "main": "index.js",
   "scripts": {
     "migrations": "tsnd ./src/data/migrations.ts",
     "dev": "ts-node-dev ./src/index.ts",
@@ -9,6 +10,17 @@
     "postinstall": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carlisegd/Hackathon-Provi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carlisegd/Hackathon-Provi/issues"
+  },
+  "homepage": "https://github.com/Carlisegd/Hackathon-Provi#readme",
   "dependencies": {
     "@mysql/xdevapi": "8.0.29",
     "bcryptjs": "^2.4.3",
