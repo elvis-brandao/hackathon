@@ -7,6 +7,9 @@ import {
   DivMeta,
   TituloDivMeta,
   PontosDivMeta,
+  TituloEDescriçao,
+  PontosEBotao,
+  ButtonIniciaMeta,
 } from "./DesafiosStyle";
 
 export const Desafios = () => {
@@ -18,12 +21,22 @@ export const Desafios = () => {
           <Tittle>Desafios Disponíveis:</Tittle>
         </TittleDesafiodiv>
         <DivMeta>
-          <TituloDivMeta>
-            <Tittle>PLANTE UMA ÁRVORE</Tittle>
-          </TituloDivMeta>
-          <PontosDivMeta>
-            <h4>300 p.</h4>
-          </PontosDivMeta>
+          <TituloEDescriçao>
+            <TituloDivMeta>
+              <Tittle>PLANTE UMA ÁRVORE</Tittle>
+            </TituloDivMeta>
+            <div>
+              <p>Descrição da meta</p>
+            </div>
+          </TituloEDescriçao>
+          <PontosEBotao>
+            <PontosDivMeta>
+              <h4>300 p.</h4>
+            </PontosDivMeta>
+            <div>
+              <ButtonIniciaMeta>Começar</ButtonIniciaMeta>
+            </div>
+          </PontosEBotao>
         </DivMeta>
       </DesafioDiv>
     </BodyDesafios>
