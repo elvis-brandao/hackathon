@@ -3,6 +3,8 @@ import desafiosDisponiveis from "../../assets/desafiosDisponiveis.png";
 import Perfil from "../../assets/Perfil.png";
 import VectorMenu from "../../assets/VectorMenu.png";
 import { Menu } from "../Menu/Menu";
+import { useHistory } from "react-router-dom";
+import { goToPerfil, goToDesafios } from "../../Routes/Cordinate";
 import {
   Headers,
   VectorDesafio,
@@ -24,6 +26,8 @@ export const Header = () => {
     }
   };
 
+  const history = useHistory();
+
   return (
     <Body>
       <MenuHeaders>
@@ -31,8 +35,8 @@ export const Header = () => {
           <BotãoMenu src={VectorMenu} onClick={handleOpen} />
         </MenuD>
         <Headers>
-          <VectorDesafio src={desafiosDisponiveis} alt="Desafios-disponiveis" />
-          <VectorPerfil src={Perfil} alt="Perfil" />
+          <VectorDesafio src={desafiosDisponiveis} alt="Desafios-disponiveis" onClick={() => goToDesafios(history)} />
+          <VectorPerfil src={Perfil} alt="Perfil" onClick={() => goToPerfil(history)} />
         </Headers>
       </MenuHeaders>
       <Text>
